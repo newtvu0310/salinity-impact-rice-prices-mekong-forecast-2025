@@ -65,7 +65,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 - Exogenous variables (salinity, rainfall, area, yield) added to form SARIMAX
 
 <p align="center">
-  <img src="graphs/02_acf_pacf_diff.png" width="820" alt="ACF and PACF of differenced rice price">
+  <img src="02_acf_pacf_diff.png" width="820" alt="ACF and PACF of differenced rice price">
   <br>
   <em>Figure 2 — ACF and PACF of the first-differenced price series. Lag-2 spike in both plots guided the AR(2) and MA(2) specification.</em>
 </p>
@@ -79,7 +79,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 - Added ARCH(1) component to model time-varying variance
 
 <p align="center">
-  <img src="graphs/03_residual_diagnostics.png" width="820" alt="Residuals and squared residuals from SARIMAX(1,1,2)">
+  <img src="03_residual_diagnostics.png" width="820" alt="Residuals and squared residuals from SARIMAX(1,1,2)">
   <br>
   <em>Figure 3 — Residuals (top) and squared residuals (bottom) from SARIMAX(1,1,2). The volatility clustering from early 2024 onward motivates the ARCH extension.</em>
 </p>
@@ -90,7 +90,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 - Portmanteau Q-test: p = 0.9125 → residuals confirmed as white noise
 
 <p align="center">
-  <img src="graphs/05_final_residual_distribution.png" width="820" alt="Q-Q plot and histogram of final model residuals">
+  <img src="05_final_residual_distribution.png" width="820" alt="Q-Q plot and histogram of final model residuals">
   <br>
   <em>Figure 4 — Q-Q plot and residual histogram of the final SARIMAX(2,1,2)-ARCH(1) model. Residuals closely follow a normal distribution with only minor tail deviations.</em>
 </p>
@@ -112,7 +112,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 > At a market price range of 8,000–10,000 VND/kg, a 2.50% MAPE means the model's average error is less than 250 VND/kg — well within practical tolerance for market planning.
 
 <p align="center">
-  <img src="graphs/07_forecast_vs_actual.png" width="820" alt="Forecast vs actual rice price Jan–Mar 2025">
+  <img src="07_forecast_vs_actual.png" width="820" alt="Forecast vs actual rice price Jan–Mar 2025">
   <br>
   <em>Figure 5 — Forecast vs. actual long-grain rice price (Jan–Mar 2025). The model closely tracks real price dynamics through the full series, with divergence only during the unexpected late-2024 market shock.</em>
 </p>
@@ -124,7 +124,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 - ARCH(1) term significant (coef = 0.617, p = 0.024) — confirms time-varying volatility in price series
 
 <p align="center">
-  <img src="graphs/08_absolute_errors.png" width="820" alt="Absolute forecast errors Jan–Mar 2025">
+  <img src="08_absolute_errors.png" width="820" alt="Absolute forecast errors Jan–Mar 2025">
   <br>
   <em>Figure 6 — Weekly absolute forecast errors over the holdout period. Most errors remain well under 300 VND/kg, confirming strong short-term forecast reliability.</em>
 </p>
