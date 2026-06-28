@@ -28,7 +28,7 @@ Saltwater intrusion in the Mekong Delta peaks during the dry season (Dec–Apr),
 **Key question:** Can we reliably forecast short-term rice prices by incorporating salinity, rainfall, cultivated area, and yield as exogenous inputs?
 
 <p align="center">
-  <img src="graphs/01_rice_price_series.png" width="820" alt="Long-grain rice price series 2022–2025">
+  <img src="01_rice_price_series.png" width="820" alt="Long-grain rice price series 2022–2025">
   <br>
   <em>Figure 1 — Weekly long-grain rice prices in the Mekong Delta (May 2022 – Mar 2025). The sharp surge in 2023 and subsequent volatility highlight the forecasting challenge.</em>
 </p>
